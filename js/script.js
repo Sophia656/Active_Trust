@@ -22,6 +22,7 @@ $(document).ready(function(){
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
+                    centerMode:false,
                 }
             },{
                 breakpoint: 1025,
@@ -65,135 +66,7 @@ if (menuLinks.length > 0) {
 // menu burger
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
-if (iconMenu) {
-    iconMenu.addEventListener("click", function(e) {
-        document.body.classList.toggle(!'_lock');
-        iconMenu.classList.toggle(!'_active');
+    iconMenu.addEventListener("click", function() {
+        iconMenu.classList.toggle('_active');
         menuBody.classList.toggle('_active');
     });
-} 
-
-// const slider = document.querySelector('.slider')
-// const sliderline = document.querySelector('.slider__line')
-// const sliderItem = document.querySelectorAll('.slider__item')
-// let count = 0;
-// let width;
-
-// const goLeft = () => {
-//     console.log('left')
-// }
-
-// const left = document.querySelector('.slider-prev')
-// console.log('left', left)
-// left.addEventListener('click', goLeft)
-
-
-// const goRight = () => {
-//     console.log('right')
-// }
-
-// const right = document.querySelector('.slider-next')
-// console.log('right', right)
-// right.addEventListener('click', goRight)
-
-// function init(){
-//     console.log('resize');
-//     width = document.querySelectorAll('.slider').offsetWidth;
-//     sliderline.style.width = width*sliderItem.length + 'px';
-//     sliderItem.forEach(item =>{
-//         item.style.width = width + 'px';
-//         item.style.height = 'auto';
-//     }) 
-// }
-
-// window.onload = () => {
-//     slider.slick({
-//         arrows:true,
-//         dots:true,
-//         adaptiveHeight:true,
-//         slidesToShow: 3,
-//         slidesToScroll: 1,
-//         speed:1000,
-//         easing:'swing',
-//         initialSlide: 0,
-//         autoplay:true,
-//         autoplaySpeed:1500,
-//         pauseOnFocus:true,
-//         pauseOnHover:true,
-//         pauseOnDotsHover:true,
-//         waitForAnimate:false,
-//         centerMode:true,
-        
-//         responsive:[
-//             {
-//                 breakpoint: 768,
-//                 settings: {
-//                     slidesToShow: 1,
-//                 }
-//             },{
-//                 breakpoint: 1025,
-//                 settings: {
-//                     slidesToShow: 2,
-//                 }
-//             }
-//         ]
-//     });
-//     slider.slick('setPosition');
-// }
-
-// window.addEventListener('resize', init);
-// init();
-
-
-// function rollslider(){
-//     sliderline.style.transform = 'translate(-'+count*width+'px';
-// }
-
-// let header = document.querySelector('.header__menu');
-// let menu = document.querySelectorAll('.header__nav__top');
-// let list = document.querySelectorAll('.header__nav__list');
-
-// if(menu) {
-//     menu.forEach((element, i) => {
-//         element.addEventListener('mouseenter', function() {
-//             list[i].classList.toggle('open');
-//     });
-// });
-//     menu.forEach((element, i) => {
-//         element.addEventListener('mouseleave', function() {
-//             list[i].classList.toggle('open');
-// });
-// });
-
-// };
-
-// // order open by click
-// let basket = document.querySelector('.header__basket');
-// let bTop = basket.querySelector('.header__basket_top');
-
-// bTop.onclick = function() {
-//     basket.classList.toggle('open');
-// };
-
-
-
-// // $(document).ready(function(){
-// //     $('.header__slider-box').slick({
-    
-// //     });
-// // });
-// const body = document.querySelector("body");
-// const checkBox = document.getElementById('menu__burger_check')
-// const headerMenu = document.querySelector('.header__menu')
-
-// if(body && checkBox) {
-//   body.addEventListener('click', function() {
-//     if(checkBox.checked){
-//       console.log('123')
-//       checkBox.checked = false;
-//     }
-//   })
-//   headerMenu.addEventListener('click', function(e) {
-//     e.stopPropagation()
-//   })
-// }
