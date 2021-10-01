@@ -22,18 +22,18 @@
 }
 .slider .slick-arrow {
     position: absolute;
-    top: -21%;
+    top: -19%;
     font-size: 0;
     width: 50px;
     height: 41px;
 }
 .slider .slick-arrow.slick-prev {
     left: 46%;
-    background: url('../img/Влево.svg') 0 0 / 100% no-repeat;
+    background: url('../img/main/Влево.svg') 0 0 / 100% no-repeat;
 }
 .slider .slick-arrow.slick-next {
     right: 46%;
-    background: url('../img/Вправо.svg') 0 0 / 100% no-repeat;
+    background: url('../img/main/Вправо.svg') 0 0 / 100% no-repeat;
 }
 .slider .slick-dots {
     display: flex;

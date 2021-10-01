@@ -3,6 +3,8 @@
 
 @import './nullstyle.css';
 @import './slider.css';
+@import './header.css';
+@import './footer.css';
 
 html {
     font-size: 24px;
@@ -13,6 +15,7 @@ body {
     font-size: 1rem;
 }
 .wrapper {
+    overflow: hidden;
     display: grid;
 	max-width: 100vw;
 	grid-template: minmax(100px, auto) 1fr minmax(auto, 30vh) / 1fr;
@@ -36,68 +39,6 @@ body {
 }
 .padding_d {
     padding-right: 15vw;
-}
-
-
-.header {
-    position: inherit;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    height: 150px;
-    padding: 2% 15vw 0 15vw;
-    background: #000000;
-}
-.header__container {
-    position: relative;
-    max-width: 1920px;
-    margin: 0 auto;
-    grid-area: header;
-    max-height: 150px;
-    align-items: center;
-	display: grid;
-    grid-template: 1fr / minmax(auto, 15vw) 1fr;
-}
-.header__logo {
-    width: 7.625rem;
-    height: 2.66rem;
-    z-index: 1;
-    margin-right: 27vw;
-}
-
-
-.menu__icon {
-    display: none;
-}
-.menu__body .menu__list a{
-    font-family: Open Sans;
-    color: #FFFFFF99;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 0.75rem;
-    line-height: 1.08;
-}
-.menu__body {
-    margin: 1vh 0 0 -5vw;
-}
-.menu__list {
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-}
-.menu__list a {
-    color: #FFFFFF99;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 0.75rem;
-    line-height: 1.08;
-    align-items: center;
-}
-.menu__list a:hover,
-.menu__list a:active{
-    color: #ffffff;
-    font-weight: bold;
 }
 
 
@@ -158,8 +99,8 @@ body {
 .about_block3::before {
     content: ' ';
     position: absolute;
-    width: 10vw;
-    margin-top: -7vh;
+    width: 4.5vw;
+    margin-top: -12vh;
     border-top: 2px solid #FFFFFF;
 }
 .about h4 {
@@ -191,7 +132,7 @@ body {
     margin-left: -1vw;
 }
 .about__call p button {
-    background: url(../img/first_button.svg);
+    background: url(../img/main/first_button.svg);
     width: 1.91rem;
     height: 1.91rem;
 }
@@ -611,114 +552,6 @@ body {
     display: flex;
     color: #FFFFFF;
     padding-left: 1vw;
-}
-
-
-.footer {
-    grid-area: footer;
-    background: #000000;
-    display: grid;
-    grid-template: 1fr 1fr / repeat(3, 1fr);
-    height: 30vh;
-    padding-top: 7vh;
-    padding-bottom: 5vh;
-}
-.footer_block1 {
-    grid-row: 1/2;
-    grid-column: 1/2;
-}
-.footer_block2 {
-    grid-row: 2/3;
-    grid-column: 1/2;
-}
-.footer_block3 {
-    grid-row: 1/3;
-    grid-column: 2/3;
-}
-.footer_block4 {
-    grid-row: 1/2;
-    grid-column: 3/4;
-}
-.footer_block5 {
-    grid-row: 2/3;
-    grid-column: 3/4;
-}
-.footer__logo {
-}
-.footer__info {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 0.75rem;
-    line-height: 1.08rem;
-    padding-top: 3vh;
-    color: #FFFFFF
-}
-.footer__nav {
-}
-.footer__nav__menu a{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 0.75rem;
-    line-height: 1.08rem;
-    color: #FFFFFF;
-}
-.footer__nav__menu li {
-    padding-bottom: 1vh;
-}
-.footer__presentation a{
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 0.75rem;
-    line-height: 1.08rem;
-    color: #FFFFFF;
-}
-.footer__presentation span {
-    font-family: Open Sans;
-    font-style: italic;
-    font-weight: 600;
-    font-size: 0.75rem;
-    line-height: 1.08rem;
-    color: #FFFFFF;
-}
-.footer__button {
-    margin: -2vh 0 0 16vw;
-}
-.footer__button span{
-    color: #FFFFFF;
-    margin-left: 3vw;
-    position: absolute;
-    z-index: 1;
-    font-size: 1.83rem;
-    font-style: normal
-}
-.footer__presentation button {
-    margin: -1vh 0 7vh 4vw;
-    position: absolute;
-    width: 1.91rem;
-    height: 1.91rem;
-    background: #027BFD;
-    border-radius: 3px;
-}
-.footer__copyright a{
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 0.75rem;
-    line-height: 1.08rem;
-    color: rgba(255, 255, 255, 0.6);
-    padding-top: 2vh;
-}
-.footer__copyright p{
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 0.75rem;
-    line-height: 1.08rem;
-    color: rgba(255, 255, 255, 0.6);
-    padding-top: 2vh;
 }
 
 
