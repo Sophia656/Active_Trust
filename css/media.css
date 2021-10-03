@@ -20,9 +20,11 @@
     .padding:nth-child(6) {
         padding-left: 10vw;
     }
+    .menu__list {
+        grid-column-gap: 2.2vw;
+    }
     .about {
         padding-left: 15vw;
-        height: calc(100vh - 150px);
     }
     .about_block3::before {
         width: 6vw;
@@ -74,7 +76,6 @@
     }
     .about {
         padding-left: 10vw;
-        height: calc(100vh - 150px);
     }
     .about_block3::before {
         width: 8.5vw;

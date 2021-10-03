@@ -53,7 +53,7 @@ body {
     background: #000000;
     display: grid;
     grid-template: repeat(5, auto) / 1fr 1fr;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 100px);
 }
 .about_block1 {
     grid-row: 1/2;
